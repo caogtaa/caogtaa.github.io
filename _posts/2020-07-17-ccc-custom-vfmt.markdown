@@ -426,5 +426,4 @@ demo基于Cocos Creator 2.4.0 （2.4会是Cocos Creator 2D的最后一个版本�
 ---------- 20200706更新 ----------
 * Demo 增加了分层合批渲染演示
 
-
-https://forum.cocos.org/t/postrender-demo/95201
+[论坛讨论贴](https://forum.cocos.org/t/postrender-demo/95201)
