@@ -1,6 +1,7 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
+theme: jekyll-theme-cayman
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
@@ -10,7 +11,6 @@ highlighter: rouge
 #
 title : Jekyll Bootstrap
 tagline: Site Tagline
-theme: jekyll-theme-cayman
 author :
   name : Cao Gaoting
   email : caogtaa@gmail.com
