@@ -78,7 +78,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Indie game is my dream<br>做一名独立游戏制作人，在路上"
+sidebar-about-description: "Making indie games<br>做一名独立游戏制作人，在路上"
 sidebar-avatar: /img/avatar-gt.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
