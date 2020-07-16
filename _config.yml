@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: caogtaa@gmail.com
 description: "关于游戏开发技巧、数据结构与算法 | 我是GT，编程和游戏是我生活的一部分 | 做一名独立游戏制作人，在路上。"
 keyword: "GT, Cocos Creator, Unity, GT的博客, 游戏开发, 程序设计"
-# url: "https://gaoting.gt"              # your host, for absolute URL
+url: ""              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
