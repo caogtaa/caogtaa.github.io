@@ -6,6 +6,7 @@ categories: cocos-creator render
 tags:
   - cocos-creator
   - render
+  - post-render
 ---
 
 
