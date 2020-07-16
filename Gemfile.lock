@@ -244,6 +244,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll (= 3.8.7)
+  jekyll-paginate
   jekyll-sitemap
   jekyll-theme-cayman
 
