@@ -11,11 +11,10 @@ tags:
 
 <a name="1ap0j"></a>
 ## 背景
-自定义渲染可以实现很多酷炫的shader特效，目前常用的有两种方法：
+在**Cocos Creator**中通过自定义渲染可以实现很多酷炫的shader特效，目前常用的有两种方法：
 
-1. **创建自定义材质，给材质增加参数。这个参数会作为uniform变量传入shader**<br />由于渲染合批要求材质参数保持一致，所以如果大量对象使用自定义材质时，并且材质参数各不相同，是无法进行合批渲染的，一个对象占一个draw call
+1. **创建自定义材质，给材质增加参数**。这个参数会作为uniform变量传入shader<br />由于渲染合批要求材质参数保持一致，所以如果大量对象使用自定义材质时，并且材质参数各不相同，是无法进行合批渲染的，一个对象占一个draw call
 1. **创建自定义assembler，在顶点数据输入渲染管道前修改它的值**<br />这种方式比较灵活，如果需要输入更多自定义参数，标准的顶点格式就不够用了
-
 
 <br />本文介绍另一种方法，即能让shader获得自定义参数，又能让自定义材质合批渲染。这种方法就是 **自定义顶点格式**<br />
 <br />
@@ -28,9 +27,9 @@ Assembler是实现本文相关功能的核心类，先简单回顾一下官方�
 > Assembler 中必须要定义 updateRenderData 及 fillBuffers 方法
 > 前者需要更新准备顶点数据，后者则是将准备好的顶点数据填充进 VetexBuffer 和 IndiceBuffer 中
 
-
-<br />2D渲染中，Assember2D类是一个重要的基础类，最常用的cc.Sprite的各种模式（Simple，平铺，九宫格）在内部都对应了不同的Assembler派生类。同样是一个四边形的节点，不同的Assembler可以将其转化成不同数量的顶点实现不同的渲染效果
-
+### Assembler在渲染过程中的角色
+Assembler可以理解为渲染组件的渲染数据装配器，渲染组件需要关联对应的Assembler才能进行渲染数据的更新和提交。
+<br /><br />2D渲染中，Assember2D类是一个重要的基础类，最常用的cc.Sprite的各种模式（Simple，平铺，九宫格）在内部都对应了不同的Assembler派生类。同样是一个四边形的节点，不同的Assembler可以将其转化成不同数量的顶点实现不同的渲染效果
 - Simple模式下是常规的四边形，有4个顶点
 - 平铺模式下Assembler根据纹理的重复次数对节点进行“拆碎”，相当于每重复一次就产生1个四边形
 - 九宫格模式下Assembler将节点拆分为9个四边形，每个四边形对应纹理上的一个“格子”
@@ -159,8 +158,6 @@ cc.js.addon(Assembler2D.prototype, {
     colorOffset: 4,
 });
 ```
-<a name="k75Nz"></a>
-### 
 <a name="4Rmm9"></a>
 ### 顶点数据计算
 
@@ -344,7 +341,7 @@ export default class MovingBGAssembler extends GTSimpleSpriteAssembler2D {
 <a name="CjSDJ"></a>
 ### RenderComponent (渲染组件)
 
-Assembler可以理解为渲染组件的渲染数据装配器，渲染组件需要关联对应的Assembler才能进行渲染数据的更新和提交。本例基于常规的cc.Sprite组件加入自定义数据`moveSpeed`用于控制纹理移动。
+本例基于常规的cc.Sprite组件加入自定义数据`moveSpeed`用于控制纹理移动。
 
 ```typescript
 @ccclass
