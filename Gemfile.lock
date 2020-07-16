@@ -245,6 +245,7 @@ DEPENDENCIES
   github-pages
   jekyll (= 3.8.7)
   jekyll-sitemap
+  jekyll-theme-cayman
 
 BUNDLED WITH
    2.1.4

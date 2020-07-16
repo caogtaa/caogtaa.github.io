@@ -10,6 +10,7 @@ highlighter: rouge
 #
 title : Jekyll Bootstrap
 tagline: Site Tagline
+theme: jekyll-theme-cayman
 author :
   name : Cao Gaoting
   email : caogtaa@gmail.com

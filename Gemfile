@@ -9,4 +9,5 @@ gem "github-pages", group: :jekyll_plugins
 # gem "rails"
 
 gem "jekyll", "3.8.7"
+gem "jekyll-theme-cayman"
 gem "jekyll-sitemap"
