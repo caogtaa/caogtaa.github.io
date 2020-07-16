@@ -3,6 +3,8 @@ layout: post
 title:  "Cocos Creator自定义渲染 —— 自定义顶点格式"
 date:   2020-07-17 01:20:35 +0800
 categories: cocos-creator render
+author: "GT"
+comments: true
 tags:
   - cocos-creator
   - render
