@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: simple
 title:  "Shader练习场"
 date:   2020-07-17 05:34:35 +0800
 categories: shader
@@ -33,6 +33,7 @@ https://github.com/patriciogonzalezvivo/glslEditor
     const glslEditor = new GlslEditor('#glsl_editor', { 
         canvas_size: 500,
         canvas_draggable: true,
+        canvas_resizable: true,
         theme: 'monokai',
         multipleBuffers: true,
         watchHash: true,
