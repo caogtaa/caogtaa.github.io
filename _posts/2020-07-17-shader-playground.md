@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Shader练习场"
 date:   2020-07-17 05:34:35 +0800
 categories: shader
@@ -22,8 +22,8 @@ https://github.com/patriciogonzalezvivo/glslEditor
 -->
 
 <head>
-    <link type="text/css" rel="stylesheet" href="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.css">
-    <script type="application/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/glslEditor.css">
+    <script type="application/javascript" src="/js/glslEditor.js"></script>
 </head>
 
 <body>
