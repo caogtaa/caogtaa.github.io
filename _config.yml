@@ -60,6 +60,7 @@ kramdown:
 
 # Disqus settings
 # disqus_username: caogtaa-github-io
+livere_uid: MTAyMC81MTIwNC8yNzY4NQ==
 
 # Netease settings
 netease_comment: false
@@ -102,8 +103,8 @@ page-mathjax: false
 
 # Friends
 friends: [
-    # {
-    #     title: "name",
-    #     href: "site"
-    # }
+    {
+        title: "白玉无冰",
+        href: "http://lamyoung.com/"
+    }
 ]
