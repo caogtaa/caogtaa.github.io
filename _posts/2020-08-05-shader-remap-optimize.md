@@ -64,4 +64,4 @@ uv = (uv - v_q) / v_p
 
 
 ## 参考
-https://forum.unity.com/threads/how-expensive-is-smooth-step-in-shaders-for-mobile.501809/
+[https://forum.unity.com/threads/how-expensive-is-smooth-step-in-shaders-for-mobile.501809/](https://forum.unity.com/threads/how-expensive-is-smooth-step-in-shaders-for-mobile.501809/)
