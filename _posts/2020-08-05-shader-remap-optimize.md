@@ -61,3 +61,7 @@ uv = (uv - v_q) / v_p
 <a name="FJnpt"></a>
 ## 优化Remap方法
 对 `Remap01` 的优化方法同样适用于任意区间映射的 `Remap` 函数，同时这个优化方法可以将原本a, b, c, d 4个参数简化为p, q 2个参数，在shader里并不用关心uv究竟被映射到了哪个区间。
+
+
+## 参考
+https://forum.unity.com/threads/how-expensive-is-smooth-step-in-shaders-for-mobile.501809/
