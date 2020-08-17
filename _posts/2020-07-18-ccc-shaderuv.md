@@ -15,7 +15,7 @@ tags: [cocos-creator, render]
 <br />经过一段时间的论坛灌水，发现有不少关于 **图片遮罩**的话题，所以本文就以批量图片遮罩为例介绍合批处理方法。
 
 先来看两张效果图，一张是用 **shader画圆做遮罩**，这里的遮罩效果可以任意替换为其他shader效果；另一张是 **自定义纹理做遮罩，**合批渲染后均只占一个draw call。<br />
-<img src="/img/in-post/20200723/shader_circle.gif" style="display:inline" width="281" height="500"><img src="/img/in-post/20200723/shader_circle.gif" style="display:inline" width="281" height="500"><br />[Demo快速传送门](https://github.com/caogtaa/CCBatchingTricks)<br />本文的实现基于[这篇分享](/cocos-creator/render/2020/07/17/ccc-custom-vfmt/)所介绍的 **自定义顶点格式**，想要了解实现原理的同学可以去回顾一下。<br />
+<img src="/img/in-post/20200723/shader_circle.gif" style="display:inline" width="281" height="500"><img src="/img/in-post/20200723/sprite_mask.gif" style="display:inline" width="281" height="500"><br />[Demo快速传送门](https://github.com/caogtaa/CCBatchingTricks)<br />本文的实现基于[这篇分享](/cocos-creator/render/2020/07/17/ccc-custom-vfmt/)所介绍的 **自定义顶点格式**，想要了解实现原理的同学可以去回顾一下。<br />
 
 <a name="Yn4RT"></a>
 ## 纹理uv坐标
