@@ -340,3 +340,10 @@ Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-
 - Using [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - Using Baidu, Tencent/QQ analytics
 - Using [DuoShuo](http://duoshuo.com/) as the Disqus-like third party discussion system
+
+### 其他
+* 本地调试
+> bundle exec jekyll serve
+
+* 本地新建一个post
+> rake post title="Your Title" subtitle="Your Subtitle"
