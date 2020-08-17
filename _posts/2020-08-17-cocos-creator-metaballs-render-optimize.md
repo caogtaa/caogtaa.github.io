@@ -94,12 +94,7 @@ var vfmtPosCenter = new gfx.VertexFormat([
 ## 性能对比
 测试环境：华为P9手机，chrome访问，开发模式<br />测试数据均来自cc自带调试面板数据的目测。
 
-|  |  | 方案1<br />（box2d+shader） | 方案2<br />（cc.Node+物理） | 方案3<br />（box2d+assembler） |
-| --- | --- | --- | --- | --- |
-| 500粒子 | 帧率 | < 10fps | < 20fps | 60fps |
-|  | Game Logic | 7~15ms | > 60ms | < 14ms |
-| 1000粒子 | 帧率 | < 10fps | < 10fps | 53~60fps<br />流动时60fps；<br />在1000粒全部积压时fps达到最低，此时contact数量最多，为7000+ |
-|  | Game Logic | 未测试 | > 150ms | < 25ms |
+![](/img/in-post/20200817/performance_compare.png)
 
 <a name="Dkmqp"></a>
 #### 数据解释
