@@ -342,8 +342,11 @@ Shout out to [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-
 - Using [DuoShuo](http://duoshuo.com/) as the Disqus-like third party discussion system
 
 ### 其他
-* 本地调试
+本地调试
 > bundle exec jekyll serve
 
-* 本地新建一个post
+本地新建一个post
 > rake post title="Your Title" subtitle="Your Subtitle"
+
+开启LaTex公式支持
+> 配置文件里 mathjax: true
